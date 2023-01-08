@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.*;
 
 public class CipherMain {
 
@@ -7,10 +7,14 @@ public class CipherMain {
         VingenereCipher Vingenere = new VingenereCipher();
         // call playfair class
         PlayfairCipher Playfair = new PlayfairCipher();
+        Scanner input = new Scanner(System. in);
 
-        String msg = "Ghaida";
-        String key = "keyword";
-
+        System.out.println("Please input the msg to encrypt: ");
+        String msg = input.nextLine();
+        
+        System.out.println("Please input a key: ");
+        String key = input.nextLine();
+        
         // display plaintext
         System.out.println("Plain Text : " + msg + "\n");
 
